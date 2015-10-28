@@ -1,7 +1,7 @@
 # Barion App2App library integration
 
 Demonstrates Android Java integration of the
-Barion App2App payment without the Barion Android library.
+Barion App2App payment with the Barion Android library.
 
 Introduction
 ------------
