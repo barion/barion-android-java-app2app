@@ -46,8 +46,6 @@ import barion.com.barionlibrary.utils.Barion;
 
 public class ShopFragment extends ListFragment implements View.OnClickListener {
 
-    private int PAYMENT_REQUEST_CODE = 10;
-
     private ArrayList<BarionProduct> products;
     private ProgressDialog progressDialog;
     private Handler handler = new Handler() {
@@ -97,7 +95,7 @@ public class ShopFragment extends ListFragment implements View.OnClickListener {
                             .total(200)
                             .comment("The new App2App Library").build());
 
-                    startActivityForResult(intent, PAYMENT_REQUEST_CODE);
+                    startActivityForResult(intent, Barion.REQUEST_CODE);
                 }
                 break;
         }
@@ -122,7 +120,7 @@ public class ShopFragment extends ListFragment implements View.OnClickListener {
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == PAYMENT_REQUEST_CODE) {
+        if (requestCode == Barion.REQUEST_CODE) {
             if (resultCode == Activity.RESULT_OK) {
                 BarionGetPaymentStateResponse response = (BarionGetPaymentStateResponse) data.getSerializableExtra(Barion.BARION_PAYMENT_STATE_RESPONSE);
                 if (response != null && getActivity() != null) {
