@@ -13,3 +13,7 @@
 1.0.3 2016-02-16
 -----------------------
 - PaymentId parse fixed
+
+1.0.4 2016-02-16
+-----------------------
+- Cancelled payment process fixed
