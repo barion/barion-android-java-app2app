@@ -24,6 +24,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ListFragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,6 +46,8 @@ import barion.com.barionlibrary.models.TransactionModel;
 import barion.com.barionlibrary.utils.Barion;
 
 public class ShopFragment extends ListFragment implements View.OnClickListener {
+
+    private static final String TAG = ShopFragment.class.getName();
 
     private ArrayList<BarionProduct> products;
     private ProgressDialog progressDialog;
@@ -130,8 +133,15 @@ public class ShopFragment extends ListFragment implements View.OnClickListener {
                     getActivity().finish();
                 }
             } else if (resultCode == Activity.RESULT_CANCELED) {
-                ArrayList<BarionError> errors = (ArrayList<BarionError>) data.getSerializableExtra(Barion.ERROR);
-                processBarionErrors(errors);
+                if (data.hasExtra(Barion.ERROR)) {
+                    ArrayList<BarionError> errors = (ArrayList<BarionError>) data.getSerializableExtra(Barion.ERROR);
+                    processBarionErrors(errors);
+                } else if (data.hasExtra(Barion.BARION_PAYMENT_STATE_RESPONSE)) {
+                    BarionGetPaymentStateResponse response = (BarionGetPaymentStateResponse) data.getSerializableExtra(Barion.BARION_PAYMENT_STATE_RESPONSE);
+                    if (response != null) {
+                        Log.d(TAG, "Response: " + response.getPaymentState().getStatus());
+                    }
+                }
             }
         }
     }
