@@ -12,7 +12,7 @@ android {
 
     defaultConfig {
         applicationId "com.barion.example.app2app.libraryintegration"
-        minSdkVersion 11
+        minSdkVersion 16
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
@@ -28,5 +28,5 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
-    compile(name:'barionlibrary-1.0.10’, ext:'aar')
+    compile(name:'barionlibrary-1.0.11’, ext:'aar')
 }
