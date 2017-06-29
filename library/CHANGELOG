@@ -53,3 +53,8 @@
 1.0.13 2017-04-10
 -----------------------
 - Bug fixes
+
+1.0.14 2017-06-29
+-----------------------
+- From now the minimum sdk version is 16
+- Small bugfixes
