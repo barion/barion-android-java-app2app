@@ -21,7 +21,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.barion.example.app2app.libraryintegration.R;
@@ -33,7 +33,7 @@ import barion.com.barionlibrary.models.BarionError;
 import barion.com.barionlibrary.models.BarionGetPaymentStateResponse;
 import barion.com.barionlibrary.models.PaymentState;
 
-public class PaymentResultActivity extends ActionBarActivity {
+public class PaymentResultActivity extends AppCompatActivity {
 
     private TextView titleTextView;
     private TextView detailTextView;

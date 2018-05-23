@@ -89,6 +89,7 @@ public class ShopFragment extends ListFragment implements View.OnClickListener {
                             .guestCheckOut(true)
                             .debugMode(true)
                             .locale("hu-HU")
+                            .currency("HUF")
                             .fundingSources(PaymentSettingsModel.FundingSourceTypeEnum.All)
                             .redirectUrl(Preferences.REDIRECT_URL).build());
 

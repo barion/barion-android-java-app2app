@@ -18,12 +18,12 @@ package com.barion.example.app2app.libraryintegration.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 
 import com.barion.example.app2app.libraryintegration.R;
 import com.barion.example.app2app.libraryintegration.fragments.ShopFragment;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
