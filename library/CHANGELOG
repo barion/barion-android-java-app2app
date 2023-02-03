@@ -70,3 +70,9 @@
 1.0.17 2018-05-23
 -----------------------
 - Small bugfixes
+
+1.1.0 2023-02-23
+-----------------------
+- Migrate to Kotlin
+- Upgrade dependencies, Gradle version
+- Actualise library with the latest changes by official Barion Docs 

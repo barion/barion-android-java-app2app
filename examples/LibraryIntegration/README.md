@@ -17,5 +17,4 @@ This sample uses the Gradle build system. To build this project, use the
 Documentation
 -------
 You can find additional informations about the integration on the following sites:
-- http://docs.barion.com (english documentation)
-- http://doksi.barion.com (hungarian documentation)
+- http://docs.barion.com

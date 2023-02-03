@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="activity_title">Smart Books App</string>
+    <string name="app_name">Smart Books</string>
+
+    <string name="detail_prepared">The payment has been registered in the Barion system.</string>
+    <string name="detail_started">The payment started successfully.</string>
+    <string name="detail_inprogress">The payment process is currently in progress.</string>
+    <string name="detail_waiting">The payment was paid with bank transfer and the result of the bank transfer is not known yet.</string>
+    <string name="detail_reserved">The amount of the payment has been reserved.</string>
+    <string name="detail_authorized">The payment was completed by the payer, but the amount is not charged yet on the bankcard.</string>
+    <string name="detail_canceled">The user canceled the payment.</string>
+    <string name="detail_succeeded">Payment succeeded.</string>
+    <string name="detail_failed">Payment failed.</string>
+    <string name="detail_partiallysucceeded">The reservation payment contains multiple transactions, and only some of them are finished.</string>
+    <string name="detail_expired">The payment was expired.</string>
+
+    <string name="loading">Loading…</string>
+    <string name="networkerror">Network error</string>
+    <string name="paywithbarion">Pay</string>
+    <string name="preparingpayment">Connecting to the Barion system…</string>
+
+    <string name="result_fail_title">The payment was unsuccessful!</string>
+    <string name="result_success_title">The payment was successful!</string>
+    <string name="result_success_detail">We got your demo order ;)</string>
+
+    <string name="stateofpayment">State of the payment:</string>
+
+    <string name="unknown">Unknown state.</string>
+
+</resources>
